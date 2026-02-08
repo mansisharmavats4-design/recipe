@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(241, 221, 224);
+           display: flex;
+           justify-content: center;
+           padding: 40px 20px;
+           margin: 0;
+        
+        }
+        .main{
+            width: 100%;
+            max-width: 700px;
+            background-color: white ;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0,0.5) ;
+            border-radius: 20px;
+            
+        }
+        .a h1{
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 55px;
+           color: #1b1b1b;
+           margin: 20px 0;
+        }
+       .a img{
+border-radius: 20px;
+width: 100%;
+height: auto;
+        }
+        .a p{
+          
+            font-family:Arial, Helvetica, sans-serif;
+        }
+       .b{
+            height: 180px;
+            border-radius: 20px;
+            background-color:rgb(245, 222, 245);
+            width: 600px;
+            font-family:Arial, Helvetica, sans-serif;
+            padding: 10px 20px;
+            line-height: 30px;
+          
+        }
+        .b h1{
+            color: purple;font-size: 30px;
+        }.b ul{
+            padding: 5px 55px;
+        }
+        section{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        section h1{
+            font-size: 33px;
+            padding-top: 15px ;
+            color: rgb(112, 31, 10);
+        }
+        section ul{
+            text-indent: 25px;
+        }
+        section li::marker{
+              color: rgb(112, 31, 10);
+            font-weight: bold;
+        }
+        hr{
+            width: 600px;
+            margin-left: 10px;
+        }
+        article{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 27px;
+        }
+        article h1{
+            color: rgb(112, 31, 10);
+            padding: 5px;
+        }
+        article li::marker{
+            color: rgb(112, 31, 10);
+            font-weight: bold;
+        }
+        article ol{
+            color: #1b1b1b;
+            text-indent: 5px; 
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        tr:last-child td {
+  border-bottom: none;
+}
+@media(max-width:759px){
+    .main{
+        width: 100%;
+        border-radius: 0;
+        padding: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <header class="a">
+        <img src="image-omelette.jpeg" alt="image">
+        <h1>Simple Omelette Recipe</h1>
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,optionally filled with your choice cheese, vegetables, or meats.</p>
+    </header>
+        <div class="b">
+            <H1>Preparation time</H1>
+            <ul type="circle">
+                <li>
+                    <b>Total:</b> Approximately 10 minutes
+                </li>
+                <li>
+                    <b>Preparation:</b> 5 minutes
+                </li>
+                <li>
+                    <b>Cooking:</b> 5 minutes
+                </li>
+            </ul>
+        </div>
+    
+    <section>
+        <h1>Ingredients</h1>
+        <ul type="circle"> 
+            <li>2-3 large eggs</li>
+            <li>salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li> 1 tablespoon of butter or oil</li>
+            <li>Optional fillings: cheese,diced vegetables, cooked meats,herbs</li>
+        </ul>
+        <hr>
+    </section>
+    <article>
+        <h1>Instructions</h1>
+        <ol type="1">
+            <li><b>
+                Beat the eggs:
+            </b>
+            In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+        </li>
+        <li>
+            <b>Heat the pan:</b>
+            Place a non-stick frying pan over medium heat and add butter or oil.
+        </li>
+        <li>
+            <b>Cook the omelette:</b>
+            Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coeat the surface.
+        </li>
+        <li>
+            <b>Add fillings(optional):</b>
+            When the eggs begin to set at the e3dges but are still slightly runny in the middle, spreinkle your fillings over one half of the omelette.
+        </li>
+        <li>
+            <b>Fold and serve:</b>
+            As the omelette continues to cook, carefully lift one edge and folt it over the fillings.Let it cook for another minute, then slide it onto a plate.
+        </li>
+        <li>
+            <b>Enjoy:</b>
+            Serve hot, with additional salt and pepper if needed.
+        </li>
+        </ol>
+    </article>
+    <hr>
+    <article class="1">
+<h1>Nutrition</h1>
+<p>The table below shows nutritional values per serving without the additional fillings</p>
+<table>
+    <tr>
+        <td>Calories</td>
+        <td>277 kcal</td>
+    </tr>
+    
+    <tr>
+        <td>Carbs</td>
+        <td>0g</td>
+    </tr>
+    <tr>
+        <td>Protein</td>
+        <td>20g</td>
+    </tr>
+    <tr>
+        <td>Fat</td>
+        <td>22g</td>
+    </tr>
+</table>
+    </article>
+    </div>
+</body>
+</html>
